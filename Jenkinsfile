@@ -1,8 +1,8 @@
-pipeline{
+pipeline {
 agent any
-environment setup{
+environment setup {
 path = "/usr/share/maven/bin:$PATH"
-stages{
+stages {
 stage('Source Download') {
             steps {
                 sh('''
@@ -18,7 +18,7 @@ stage('Source Download') {
             }
         }
 stage('Build'){
-steps{
+steps {
 echo "Starting build"
 sh "mvn clean install"
 ''')
