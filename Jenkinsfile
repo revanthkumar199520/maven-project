@@ -1,3 +1,21 @@
-#!/bin/bash
-echo This is Declarative pipe line
-echo ${date}
+pipeline{
+agent any
+stages{
+stage('Welcome'){
+echo This is dlarative pipe line
+}
+
+stage('Build'){
+echo Starting build now
+}
+
+
+}
+
+
+
+
+
+
+}
+
