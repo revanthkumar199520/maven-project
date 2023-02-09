@@ -7,7 +7,7 @@ stage('Source download'){
 steps{
 echo "Starting downloading source"
 echo "Printing current working directory"
-echo `pwd`
+echo $pwd
 rm -rf*
 git clone `https://github.com/revanthkumar199520/maven-project.git`
 echo"Printing curent working directory"
