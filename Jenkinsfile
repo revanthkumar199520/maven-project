@@ -4,6 +4,7 @@ environment setup{
 path = "/usr/share/maven/bin:$PATH"
 stages{
 stage('Source download'){
+steps{
 sh('''
 echo "Starting downloading source"
 echo "Printing current working directory"
@@ -14,20 +15,11 @@ echo"Printing curent working directory"
 echo"Source download completed"
 ''')
 }
+}
 stage(Build){
+steps{
 sh('''
 #!bin/bash
 echo "Starting build"
 echo "mvn clean install
-''')
-            }
-        }
-
-
-
-
-    }
-
 }
-
->>>>>>> 7b07b5ffc0682988ba4dd720fbc404e8357f3a0a
